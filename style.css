@@ -24,9 +24,11 @@ html {
 }
 .item2 {
     grid-row: span 3;
+    background-image: url(item2.png);
 }
 .item8 {
     grid-row: span 3;
+    background-image: url(item3.png);
 }
 
 .grid {
@@ -37,3 +39,16 @@ html {
     grid-template-rows: 135px 135px 135px 135px 135px 135px 135px;
 }
 
+@media only screen and (max-width:950px) {
+    .grid {
+        display: grid;
+        grid-auto-rows: auto;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .grid {
+        display: grid;
+        grid-auto-rows: auto;
+    }
+}
